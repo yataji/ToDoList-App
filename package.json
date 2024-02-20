@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^1.6.7",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "json-server": "^1.0.0-alpha.23",
+    "xss": "^1.0.14"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.4",
+    "nodemon": "^3.0.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "json": "npx json-server ./models/data.json --port 8000"
+  },
+  "name": "todolist-app",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

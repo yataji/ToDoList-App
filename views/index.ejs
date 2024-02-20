@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo LIST</title>
+  </head>
+  <body>
+    <button>
+      <a href="/todos/add">Add To List</a>
+    </button>
+    <% data.forEach(elm => { %>
+    <h1><%= elm.id %></h1>
+    <h1><%= elm.title %></h1>
+    <h1><%= elm.description %></h1>
+    <button>
+      <a href="/todos/edit/<%= elm.id %>">edit</a>
+    </button>
+    <button>
+      <a href="/todos/delete/<%= elm.id %>">delete</a>
+    </button>
+    <% }) %>
+  </body>
+</html>
